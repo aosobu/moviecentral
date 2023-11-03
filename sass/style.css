@@ -72,12 +72,11 @@ body {
 .header {
   width: 100%;
   height: 120vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/cosmos.jpg);
   background-size: cover;
   background-position: center;
   padding: 10px 8%;
   position: relative;
-  border: 1px dashed rgb(97, 184, 116);
 }
 
 nav {
@@ -171,7 +170,6 @@ nav button {
 /*--------- features  ---------*/
 .features {
   font-size: 22px;
-  border: 1px dashed rgba(238, 107, 20, 0.651);
   line-height: 3rem;
 }
 
@@ -185,7 +183,6 @@ nav button {
   align-items: center;
   flex-wrap: wrap;
   padding: 50px 0;
-  border: 1px dashed lightgreen;
 }
 
 .text-col, .img-col {
@@ -198,7 +195,6 @@ nav button {
 }
 
 .img-col img {
-  display: block;
   width: 80%;
   margin: auto;
 }
@@ -220,20 +216,19 @@ nav button {
 .faq h2 {
   font-weight: 500;
   font-size: 40px;
-  border: 1px dashed turquoise;
 }
 
 .accordion {
   margin: 60px auto;
   width: 100%;
   max-width: 750px;
-  border: 1px dashed orange;
 }
 
 .accordion li {
   list-style: none;
   width: 100%;
-  padding: 0px;
+  padding: 3px 0;
+  text-align: left;
 }
 
 .accordion li label {
@@ -246,7 +241,6 @@ nav button {
   margin-bottom: 2px;
   cursor: pointer;
   position: relative;
-  border: 2px dashed pink;
 }
 
 label::after {
@@ -332,4 +326,64 @@ footer .language-btn {
   margin-bottom: 10px;
 }
 
-/* -------- media queries for small screen ------------ *//*# sourceMappingURL=style.css.map */
+/* -------- media queries for small screen ------------ */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 110px;
+  }
+  nav button {
+    padding: 3px 7px;
+  }
+  nav .language-btn {
+    padding: 2px 5px;
+  }
+  .header-content {
+    position: unset;
+    transform: none;
+    padding-top: 180px;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto 0;
+  }
+  .header-content h1 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .email-signup button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .text-col, .img-col {
+    flex-basis: 100%;
+  }
+  .features h2 {
+    font-size: 2rem;
+  }
+  .features p {
+    font-size: 1rem;
+  }
+  .features img {
+    border-radius: 5px;
+  }
+  .row:nth-child(2),
+  .row:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+  .features .row {
+    padding: 20px 0;
+  }
+  .faq h2 {
+    font-size: 20px;
+  }
+  .accordion .content {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .accordion li label {
+    padding: 10px;
+    font-size: 14px;
+  }
+  label::after {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
